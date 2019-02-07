@@ -1,0 +1,78 @@
+{
+  "NAVIGATION": {
+    "LOCATION": "Anamnagar, Kathmandu",
+    "CONTACT_NUMBER": "+977 9851060091",
+    "HOME": "HOME",
+    "ABOUT": "ABOUT",
+    "SECTORS": "SECTORS",
+    "OUR_TEAM": "OUR TEAM",
+    "GALLERY": "GALLERY",
+    "BLOG": "NEWS & BLOG",
+    "CONTACT": "CONTACT",
+    "FREE_CONSULTATION": "Free Consultation"
+  },
+  "FOOTER": {
+    "CONTACT_DETAILS_HEADER": "Contact Details",
+    "LOCATION_MAP_HEADER": "Location Map",
+    "OFFICE_HOURS_HEADER": "Office Hours",
+    "OFFICE_HOURS_TIME": "10:00 AM - 6:00 PM",
+    "OFFICE_HOURS_DAYS": "Sunday to Friday",
+    "COPYRIGHT_TEXT": "Copyright Ⓒ 2019 Mechi Kali Law Associates, Kathmandu, Nepal",
+    "DISCLAIMER_TEXT": "This website is provided for purposes of information only, and does not serve as advertisement or solicitation."
+  },
+  "HOME": {
+    "HEADER_MESSAGE": "Reliable & Effective Legal Solutions",
+    "QUALITIES": {
+      "QUALITY_1": "Fair Fees",
+      "QUALITY_DESC_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "QUALITY_2": "Free Consultation",
+      "QUALITY_DESC_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "QUALITY_3": "Quality Representation",
+      "QUALITY_DESC_3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    "NEWS_TITLE": "Latest Articles - News & Blog",
+    "PRACTICE_AREAS": {
+      "HEADER": "Practice Areas",
+      "COMPANY_INCORPORATION": "Company Incorporation",
+      "COMPANY_INCORPORATION_DESC": "",
+      "SECRETARIAL_SERVICES": "Secretarial Services",
+      "SECRETARIAL_SERVICES_DESC": "",
+      "NON_PROFIT": "Non-Profit & INGO",
+      "NON_PROFIT_DESC": "",
+      "FOREIGN_INVESTMENT": "Foreign Investment",
+      "FOREIGN_INVESTMENT_DESC": "",
+      "LITIGATION_DISPUTES": "Litigation & Disputes",
+      "LITIGATION_DISPUTES_DESC": "",
+      "CONTRACTS": "Contracts",
+      "CONTRACTS_DESC": "",
+      "CORPORATE_TAX": "Corporate Tax",
+      "CORPORATE_TAX_DESC": "",
+      "LABOUR_EMPLOYMENT": "Labour and Employment",
+      "LABOUR_EMPLOYMENT_DESC": "",
+      "INTELLECTUAL_PROPERTY": "Intellectual Property",
+      "INTELLECTUAL_PROPERTY_DESC": "",
+      "MERGERS": "Mergers & Acquisitions",
+      "MERGERS_DESC": ""
+    }
+  },
+  "ABOUT": {
+    "ABOUT_HEADER": "Our History",
+    "ABOUT_TITLE1": "What is Lorem Ipsum?",
+    "ABOUT_DESC1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "ABOUT_TITLE2": "Where does it come from?",
+    "ABOUT_DESC2": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+    "ABOUT_TITLE3": "Why do we use it?",
+    "ABOUT_DESC3": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+  },
+  "TEAM": {
+    "TEAM_HEADER": "Our Team",
+    "TEAM_INTRO": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "TEAM_MEMBER1_NAME": "Baburam Dahal",
+    "TEAM_MEMBER1_TITLE": "Founder",
+    "TEAM_MEMBER1_DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  "BLOG": {
+    "BLOG_HEADER": "Latest in News / Blog",
+    "BLOG_SUBTITLE": "Check this section for the latest news and blog articles."
+  }
+}

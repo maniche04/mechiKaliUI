@@ -1,0 +1,58 @@
+<br>
+<div style="margin:8px" class="mat-elevation-z0">
+  <mat-card-title class="big">
+    {{"BLOG.BLOG_HEADER" | translate}}
+  </mat-card-title>
+  <p>{{"BLOG.BLOG_SUBTITLE" | translate}}</p>
+  <mat-card-content>
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxLayout.xs="column">
+        <ng-container *ngFor="let article of api.getArticles()">
+            <mat-card fxFlex="30%" fxFlex.xs="80%" *ngIf="translate.currentLang == 'en' && article.title_en.length > 1" class = "news-card" >
+                <mat-card-header>
+                  <div mat-card-avatar>
+                    <mat-icon>rss_feed</mat-icon>
+                  </div>
+                  <mat-card-title >
+                    {{article.title_en}}
+                  </mat-card-title>
+                  <mat-card-subtitle>27th January, 2018</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content style="max-height:150px!important;min-height:150px">
+                    <img class="clickable" (click)="openDialog(article.image_url)" *ngIf="article.image_url" width ="50%" src="{{article.image_url}}" alt="Photo of a Shiba Inu">
+                  <p>
+                    {{article.summary_en}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button *ngIf="article.summary_en != article.content_en" mat-stroked-button color="primary">Read More</button>
+                    <button mat-stroked-button color="primary">Share</button>
+                    <button *ngIf="article.attachment_url" mat-stroked-button color="primary">Download</button>
+                </mat-card-actions>
+              </mat-card>
+              <mat-card fxFlex="30%" fxFlex.xs="80%" fxFlex.xs="80%"  *ngIf="translate.currentLang == 'ne' && article.title_ne.length > 1" class = "news-card" >
+                  <mat-card-header>
+                    <div mat-card-avatar>
+                      <mat-icon>rss_feed</mat-icon>
+                    </div>
+                    <mat-card-title >
+                      {{article.title_ne}}
+                    </mat-card-title>
+                    <mat-card-subtitle>27th January, 2018</mat-card-subtitle>
+                  </mat-card-header>
+                  <!-- <img width="80px" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+                  <mat-card-content style="max-height:150px!important;min-height:150px" >
+                    <img class="clickable" (click)="openDialog(article.image_url)" *ngIf="article.image_url" width ="50%" src="{{article.image_url}}" alt="Photo of a Shiba Inu">
+                    <p>
+                      {{article.summary_ne}}
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button *ngIf="article.summary_ne != article.content_ne" mat-stroked-button color="primary">Read More</button>
+                    <button mat-stroked-button color="primary">Share</button>
+                    <button *ngIf="article.attachment_url" mat-stroked-button color="primary">Download</button>
+                  </mat-card-actions>
+                </mat-card>
+        </ng-container>
+    </div>
+  </mat-card-content>
+</div>

@@ -1,0 +1,136 @@
+@import '../variables.scss';
+@import '~@angular/material/theming';
+
+.toolbar {
+  &.small {
+    font-size: 14px;
+    height: 40px;
+
+    .mat-icon {
+      font-size: 14px;
+      height: 14px;
+    }
+  }
+
+  &.main {
+    height: 80px;
+  }
+}
+
+.navlinks {
+
+  ::ng-deep .mat-button {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: mat-color($md-mkprimary, 400);
+
+    &.active {
+      color: mat-color($md-mksecondary, 900);
+    }
+
+    :hover {
+      color: mat-color($md-mkprimary, 900);
+    }
+  }
+
+  ::ng-deep .mat-raised-button {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    &.consult_btn {
+      color: white
+    }
+  }
+
+}
+
+.lang {
+  font-weight: 800;
+  cursor: pointer;
+
+  &.activeLang {
+    border-bottom: 1px solid;
+  }
+}
+
+#main-content {
+  margin: 0px;
+}
+
+.footer {
+  padding-left: 5%;
+  padding-right: 5%;
+
+  &.top {
+    background-color: mat-color($md-mksecondary, 500);
+    height: 220px;
+
+    p {
+      font-size: 16px;
+      margin: 2px;
+    }
+  }
+
+  &.bottom {
+    height: 40px;
+    background-color: mat-color($md-mkprimary, 500);
+
+    p {
+      font-size: 14px;
+      margin: 2px;
+    }
+  }
+
+  mat-icon {
+    padding-right:15px;
+    font-size: 16px;
+    height: 16px;
+    color: mat-color($md-mkprimary, 500);
+  }
+
+  hr {
+    background-color: mat-color($md-mkprimary, 900);
+    height: 1px; border: 0;
+  }
+
+  h1.title {
+    font-size: 1.4em;
+    font-family: $cursive_font;
+  }
+}
+
+::ng-deep {
+  .mat-icon {
+    font-size: 32px;
+    color: mat-color($md-mksecondary, 900);
+
+    &.big {
+      color: mat-color($md-mkprimary, 900);
+    }
+  }
+
+  .mat-card-title {
+    font-weight: 800;
+    color: mat-color($md-mkprimary, 900);
+
+    &.big {
+      font-size: 28px;
+      font-family: $cursive_font;
+      text-shadow: 1px 1px mat-color($md-mksecondary, 200);
+    }
+  }
+
+  .mat-card-avatar {
+    &.center {
+      width: 100%;
+    }
+  }
+
+  .mat-card-header {
+    &.center {
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+

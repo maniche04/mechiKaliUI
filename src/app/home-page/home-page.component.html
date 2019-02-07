@@ -1,0 +1,127 @@
+<mat-card fxFlexLayout="column" fxLayoutAlign="end center" class="home_banner mat-elevation-z0">
+  <mat-card-content>
+    <h1 class='pad-right'>
+      {{'HOME.HEADER_MESSAGE' | translate }}
+    </h1>
+    <div fxFlexLayout="row" fxLayoutAlign="space-evenly center" class="qualities">
+        <mat-card fxFlex = "30%">
+            <mat-card-header>
+                <div mat-card-avatar>
+                  <mat-icon>attach_money</mat-icon>
+                </div>
+                <mat-card-title>
+                  {{'HOME.QUALITIES.QUALITY_1' | translate}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                {{'HOME.QUALITIES.QUALITY_DESC_1' | translate}}
+            </mat-card-content>
+        </mat-card>
+        <mat-card fxFlex = "30%">
+            <mat-card-header>
+                <div mat-card-avatar>
+                  <mat-icon>contact_support</mat-icon>
+                </div>
+                <mat-card-title>
+                    {{'HOME.QUALITIES.QUALITY_2' | translate}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                {{'HOME.QUALITIES.QUALITY_DESC_2' | translate}}
+            </mat-card-content>
+        </mat-card>
+        <mat-card fxFlex = "30%">
+            <mat-card-header>
+                <div mat-card-avatar>
+                  <mat-icon>verified_user</mat-icon>
+                </div>
+                <mat-card-title>
+                    {{'HOME.QUALITIES.QUALITY_3' | translate}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                {{'HOME.QUALITIES.QUALITY_DESC_3' | translate}}
+            </mat-card-content>
+        </mat-card>
+      </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class = "mat-elevation-z0">
+    <mat-card-header class="center">
+        <div class="center" mat-card-avatar>
+          <mat-icon class="big">bookmarks</mat-icon>
+        </div>
+        <mat-card-title class="big">
+          {{'HOME.NEWS_TITLE' | translate}}
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div id="latest_news" fxLayoutAlign="start center" fxFlex>
+            <ng-container *ngFor="let article of api.getArticles()">
+                <mat-card *ngIf="translate.currentLang == 'en' && article.title_en.length > 1" class = "news-card" >
+                    <mat-card-header>
+                      <div mat-card-avatar>
+                        <mat-icon>rss_feed</mat-icon>
+                      </div>
+                      <mat-card-title >
+                        {{article.title_en}}
+                      </mat-card-title>
+                      <mat-card-subtitle>27th January, 2018</mat-card-subtitle>
+                    </mat-card-header>
+                    <!-- <img width="80px" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+                    <mat-card-content>
+                      <p>
+                        {{article.summary_en}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>Read More</button>
+                      <button mat-button>Share</button>
+                    </mat-card-actions>
+                  </mat-card>
+                  <mat-card *ngIf="translate.currentLang == 'ne' && article.title_ne.length > 1" class = "news-card" >
+                      <mat-card-header>
+                        <div mat-card-avatar>
+                          <mat-icon>rss_feed</mat-icon>
+                        </div>
+                        <mat-card-title >
+                          {{article.title_ne}}
+                        </mat-card-title>
+                        <mat-card-subtitle>27th January, 2018</mat-card-subtitle>
+                      </mat-card-header>
+                      <!-- <img width="80px" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+                      <mat-card-content>
+                        <p>
+                          {{article.summary_ne}}
+                        </p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <button mat-button>Read More</button>
+                        <button mat-button>Share</button>
+                      </mat-card-actions>
+                    </mat-card>
+            </ng-container>
+        </div>
+    </mat-card-content>
+</mat-card>
+<mat-card fxFlexLayout="row" fxLayoutAlign="center center" class="home_banner2 mat-elevation-z0">
+  <mat-card-content>
+    <h1 class="pad-left">
+      {{'HOME.PRACTICE_AREAS.HEADER' | translate }}
+    </h1>
+    <br>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around start">
+      <mat-card *ngFor="let area of areas" class="area">
+        <mat-card-header class="center">
+          <div class="center" mat-card-avatar>
+            <mat-icon>{{area.icon}}</mat-icon>
+          </div>
+          <mat-card-title class="small">
+            {{area.title | translate}}
+          </mat-card-title>
+      </mat-card-header>
+      </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>
